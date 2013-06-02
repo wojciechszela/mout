@@ -9,6 +9,7 @@ return {
     'abbreviate' : require('./number/abbreviate'),
     'currencyFormat' : require('./number/currencyFormat'),
     'enforcePrecision' : require('./number/enforcePrecision'),
+    'ordinal' : require('./number/ordinal'),
     'pad' : require('./number/pad'),
     'rol' : require('./number/rol'),
     'ror' : require('./number/ror'),

@@ -7,6 +7,7 @@ define([
     './number/spec-abbreviate',
     './number/spec-currencyFormat',
     './number/spec-enforcePrecision',
+    './number/spec-ordinal',
     './number/spec-pad',
     './number/spec-rol',
     './number/spec-ror',
