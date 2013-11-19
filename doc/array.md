@@ -737,6 +737,29 @@ sort([2, 3, 1, 4], function(a, b){
 
 
 
+## sortBy(arr, callback, [context]):Array
+
+Returns an array sorted by the result of the callback.
+
+The callback is called for each item that is to be sorted, and the
+results of the callback are used to sort the array. The callback
+is called with the item as the first parameter, optionally with
+the provided context.
+
+It also supports a shorthand notation which can be used to achieve same
+result as [`array/pluck`](#pluck):
+
+```js
+// Returns [{ a: 1 }, { a: 2 }, { a: 3 }]
+sortBy([{ a: 1 }, { a: 3 }, { a: 2 }],
+    function(item) { return item.a; });
+
+// Same as above, using shorthand notation
+sortBy([{ a: 1 }, { a: 3 }, { a: 2 }], 'a');
+```
+
+
+
 ## split(arr, [segments]):Array
 
 Splits an array into a fixed number of segments.
